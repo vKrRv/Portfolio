@@ -1,17 +1,38 @@
+/*######################################################*/
+/*################## General styling: ##################*/
+/*######################################################*/
 body {
-    background-color: #222222;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: whitesmoke;
+    font-family: "Droid Sans", serif;
 }
-
-/*Nav bar styling: */
-nav {
-    background-color: #1C1C1C; //dark-background
-    padding: 15px 0;
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+/*######################################################*/
+/*################## Header styling: ###################*/
+/*######################################################*/
+header {
+    margin: 0 10%;
+    background-color: darkgray;
     width: 80%;
-    margin: 0 auto;
-    border-radius: 300px;
+    border-radius: 20px;
+
+}
+/*#########################################################*/
+/*################### Nav bar styling: ####################*/
+/*#########################################################*/
+nav {
+
+}
+h1.title {
+    text-align: center;
+    margin-top: 0;
+    padding: 15px 0 0 0;
+    color: #483d8b;
+    font-weight: bold;
 }
 nav ul {
     list-style: none; /*remove-bullets*/
@@ -26,14 +47,82 @@ nav a {
     text-decoration: none; /*remove-underline*/
     font-size: 18px;
     transition: color 0.3s ease;
+    border-radius: 20px;
 }
 nav a:hover {
-    color: #FF9800;
+    color: #483d8b;
 }
-h1.logo {
+/*#########################################################*/
+/*################### Main styling: #######################*/
+/*#########################################################*/
+.main-container {
+    display: grid;
+    grid-template-areas:
+    "hero hero hero"
+    "about projects projects"
+    "about projects projects"
+    "skills projects projects"
+    "skills projects projects"
+    "skills contact contact"
+    "skills contact contact"
+    "skills contact contact";
+    grid-template-rows: 3fr repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 10px 0;
+}
+#hero {
+    grid-area: hero;
+    /*Next properties are for testing only*/
+    background-color: darkslateblue;
+    border: 8px solid black;
+    min-height: 200px;
+}
+#about {
+    grid-area: about;
+    /*Next properties are for testing only*/
+    background-color: darkslateblue;
+    border: 8px solid black;
+    min-height: 200px;
+}
+#projects {
+    grid-area: projects;
+    /*Next properties are for testing only*/
+    background-color: darkslateblue;
+    border: 8px solid black;
+    min-height: 200px;
+}
+#skills {
+    grid-area: skills;
+    /*Next properties are for testing only*/
+    background-color: darkslateblue;
+    border: 8px solid black;
+    min-height: 200px;
+}
+#contact {
+    grid-area: contact;
+    /*Next properties are for testing only*/
+    background-color: darkslateblue;
+    border: 8px solid black;
+    min-height: 200px;
+}
+
+/*#########################################################*/
+/*################### Footer styling: #####################*/
+/*#########################################################*/
+footer {
     text-align: center;
-    margin-top: 30px;
-    padding: 15px 0 0 0;
-    color: #FF9800;
-    font-weight: bold;
+    color: #808080;
+}
+
+/*#########################################################*/
+/*################### Styling section: ####################*/
+/*#########################################################*/
+
+/*#########################################################*/
+/*################### Dark mode default: ##################*/
+/*#########################################################*/
+/*This code is on hold for now*/
+@media (prefers-color-scheme: dark) {
+
 }
