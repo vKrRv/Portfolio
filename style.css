@@ -53,9 +53,59 @@ nav a:hover {
     color: #483d8b;
 }
 /*#########################################################*/
-/*################### Hero section: #######################*/
+/*################### Main styling: #######################*/
 /*#########################################################*/
-
+.main-container {
+    display: grid;
+    grid-template-areas:
+    "hero hero hero"
+    "about projects projects"
+    "about projects projects"
+    "skills projects projects"
+    "skills projects projects"
+    "skills contact contact"
+    "skills contact contact"
+    "skills contact contact";
+    grid-template-rows: 3fr repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 10px 0;
+}
+#hero {
+    grid-area: hero;
+    /*Next properties are for testing only*/
+    background-color: darkslateblue;
+    border: 8px solid black;
+    min-height: 200px;
+}
+#about {
+    grid-area: about;
+    /*Next properties are for testing only*/
+    background-color: darkslateblue;
+    border: 8px solid black;
+    min-height: 200px;
+}
+#projects {
+    grid-area: projects;
+    /*Next properties are for testing only*/
+    background-color: darkslateblue;
+    border: 8px solid black;
+    min-height: 200px;
+}
+#skills {
+    grid-area: skills;
+    /*Next properties are for testing only*/
+    background-color: darkslateblue;
+    border: 8px solid black;
+    min-height: 200px;
+}
+#contact {
+    grid-area: contact;
+    /*Next properties are for testing only*/
+    background-color: darkslateblue;
+    border: 8px solid black;
+    min-height: 200px;
+}
 
 /*#########################################################*/
 /*################### Footer styling: #####################*/
