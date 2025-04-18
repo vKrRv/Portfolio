@@ -81,10 +81,13 @@ nav a:hover {
 }
 #hero {
     grid-area: hero;
+    text-align: center;
+    width: 80%;
+    margin: 0 10%;
     /*Next properties are for testing only*/
-    background-color: darkslateblue;
-    border: 8px solid black;
-    min-height: 200px;
+    /*background-color: darkslateblue;*/
+    /*border: 8px solid black;*/
+    /*min-height: 200px;*/
 }
 #about {
     grid-area: about;
@@ -114,7 +117,22 @@ nav a:hover {
     border: 8px solid black;
     min-height: 200px;
 }
-
+/*#########################################################*/
+/*################### Hero styling: #######################*/
+/*#########################################################*/
+#hero img {
+    width: 75%;
+    border-radius: 5px;
+    border: darkslateblue solid;
+}
+#hero h1 {
+    position: absolute;
+    top: 34%;
+    left: 36%;
+}
+#hero p {
+    color: cornflowerblue;
+}
 /*#########################################################*/
 /*################### Footer styling: #####################*/
 /*#########################################################*/
