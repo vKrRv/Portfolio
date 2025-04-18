@@ -84,6 +84,7 @@ nav a:hover {
     text-align: center;
     width: 80%;
     margin: 0 10%;
+    position: relative;
     /*Next properties are for testing only*/
     /*background-color: darkslateblue;*/
     /*border: 8px solid black;*/
@@ -122,13 +123,14 @@ nav a:hover {
 /*#########################################################*/
 #hero img {
     width: 75%;
-    border-radius: 5px;
-    border: darkslateblue solid;
+    border-radius: 180px;
+    border: cornflowerblue solid;
 }
 #hero h1 {
     position: absolute;
-    top: 34%;
-    left: 36%;
+    top: 7%;
+    left: 29%;
+    color: cornflowerblue;
 }
 #hero p {
     color: cornflowerblue;
