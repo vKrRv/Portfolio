@@ -58,15 +58,23 @@ nav a:hover {
 .main-container {
     display: grid;
     grid-template-areas:
-    "hero hero hero"
-    "about projects projects"
-    "about projects projects"
+    "hero hero about"
+    "hero hero about"
     "skills projects projects"
     "skills projects projects"
-    "skills contact contact"
+    "skills projects projects"
+    "skills projects projects"
     "skills contact contact"
     "skills contact contact";
-    grid-template-rows: 3fr repeat(7, 1fr);
+    /*"hero hero hero"*/
+    /*"about projects projects"*/
+    /*"about projects projects"*/
+    /*"skills projects projects"*/
+    /*"skills projects projects"*/
+    /*"skills contact contact"*/
+    /*"skills contact contact"*/
+    /*"skills contact contact";*/
+    grid-template-rows: repeat(8, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
     margin: 10px 0;
